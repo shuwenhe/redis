@@ -35,6 +35,29 @@
 \tableofcontents
 
 %
+\chapter{连接池}
+\section{pool}
+1.max\_line:8最大空闲数\\
+2.max\_active:0最大连接数,0不限制\\
+3.idle\_time\_out:100最大空闲时间\\
+4.c:=pool.Get()//取出一个连接\\
+5.c:=pool.Close//关闭
+
+\section{pool.Get}
+
+\section{conn.Close}
+
+\section{conn.Do}
+
+\section{连接池使用案例}
+\begin{lstlisting}
+var pool *redis.Pool
+//当启动程序时就初始化连接池
+pool = &redis.Pool{
+}
+\end{lstlisting}
+
+%
 \chapter{DAL到cache}
 \section{•}
 
